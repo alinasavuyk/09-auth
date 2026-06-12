@@ -27,6 +27,7 @@ export const fetchNoteById = async (id: string) => {
 
 export const register = async (data: RegisterRequest) => {
   const res = await nextServer.post<User>('/auth/register', data);
+  console.log(res)
   return res.data;
 };
 

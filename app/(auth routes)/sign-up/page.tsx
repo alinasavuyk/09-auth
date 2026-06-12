@@ -16,7 +16,6 @@ const SignUpPage = () => {
       const userData: RegisterRequest = {
         email: String(formData.get('email')),
         password: String(formData.get('password')),
-        userName: String(formData.get('userName')),
       };
       const user = await register(userData);
       if (user) {
